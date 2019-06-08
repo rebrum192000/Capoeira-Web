@@ -319,12 +319,9 @@ button{
 	}
 	.nav__item-link:hover{
 		color: #BB0000;
-		border: 1px solid #BB0000;
-		-webkit-box-sizing: border-box;
-		        box-sizing: border-box;
 	}
 	.nav__item:last-of-type{
-		margin-right: 0;
+		margin-right: 65px;
 	}
 	.nav__item{
 		margin-bottom: 0;
@@ -332,6 +329,13 @@ button{
 		    -ms-flex-preferred-size: 150px;
 		        flex-basis: 150px;
 		height: 43px;
+	}
+
+	.active-page{
+		color: #BB0000;
+		border: 1px solid #BB0000;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
 	}
 	.long{
 		margin-bottom: 0;
