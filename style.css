@@ -2593,7 +2593,7 @@ button{
 }
 @media (min-width: 768px) {
 	.enc__menu-title {
-		margin-left: 70px;
+		padding-left: 70px;
 	}
 	.enc__menu-list {
 		display: -webkit-box;
@@ -2620,16 +2620,13 @@ button{
 	.enc__menu-title {
 		font-size: 24px;
 	    line-height: 29px;
-		margin-left: 163px;
+		padding-left: 80px;
 	}
 	.enc__menu-bg {
 		padding: 48px 0 25px;
 	}
 	.enc__menu-list {
-		-webkit-box-pack: start;
-		-webkit-justify-content: flex-start;
-		    -ms-flex-pack: start;
-		        justify-content: flex-start;
+		justify-content: space-between;
 		padding-left: 109px;
     	padding-right: 96px;
 	}
@@ -2664,9 +2661,10 @@ button{
 }
 @media (min-width: 1300px) {
 	.enc__history-title {
-		font-size: 16px;
+		/* font-size: 16px;
 		line-height: 16px;
-		margin-left: 163px;
+		margin-left: 163px; */
+		display: none;
 	}
 	.enc__history-bg {
 		width: 1075px;
