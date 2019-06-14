@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Фотогалерея</title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+	<header class="header container">
+
+		<nav class="header__nav">
+			<a href=""><img src="img/logo.png" alt="" class="nav__image"></a>
+			<button class="header__nav-close"></button>
+			<ul class="nav__list p0">
+				<li class="nav__item"><a href="index.html" class="nav__item-link">О нас</a></li>
+				<li class="nav__item"><a href="" class="nav__item-link">Лагеря</a></li>
+				<li class="nav__item"><a href="" class="nav__item-link">Занятия</a></li>
+				<li class="nav__item"><a href="schedule.html" class="nav__item-link">Расписание</a></li>
+				<li class="nav__item"><a href="encyclopedia.html" class="nav__item-link one">Ludus BJJ</a></li>
+				<li class="nav__item"><a href="" class="nav__item-link  active-pageC">Фотогалерея</a></li>
+				<li class="nav__item"><a href="contacts.html" class="nav__item-link">Контакты</a></li>
+			</ul>
+		</nav>
+
+		<div class="header__menu-mob">
+			<button class="header__burger"></button>
+			<img src="img/logo.png" alt="" class="header__logo-image">
+			<div class="header__tel2-wrap">
+				<p class="p0 header__tel2-number"><a class="header__tel2-link" href="tel:+79263451294">+7 (926) 345 12 94</a></p>
+				<p class="p0 header__tel2-text">ЗВОНИТЕ В БУДНИ С 12:00 ДО 20:00</p>
+			</div>
+		</div>
+
+		<div class="header__desk-wrap">
+			<div class="header__desk-texts">
+				<p class="p0 header__desk-top">Записаться на</p>
+				<p class="p0 header__desk-bottom"> БЕСПЛАТНОЕ ЗАНЯТИЕ:</p>
+			</div>
+			<div class="header__tel-wrap">
+				<p class="p0 header__tel-number"><a class="header__tel-link" href="tel:+79263451294">+7 (926) 345 12 94</a></p>
+				<p class="p0 header__tel-text">ЗВОНИТЕ В БУДНИ С 12:00 ДО 20:00</p>
+			</div>
+		</div>
+	</header>
+	<main class="gallery__main">
+		
+		<section class="gallery__events">
+			<h2 class="p0 gallery__events-head">ФОТОГАЛЕРЕЯ</h2>
+			<div class="gallery__events-wrap">
+				<div class="gallery__events-wrap-flex">
+					<button class="gallery__events-arrow1 btn-back" onclick="minusSlide1()"></button>
+					<div class="gallery__events-item">
+						<img src="img/top-s1.jpg" alt="" class="gallery__events-img">
+						<p class="p0 gallery__events-text">Семинар Ludus BJJ Марьино No GI (Грэпплинг)</p>
+					</div>
+					<div class="gallery__events-item">
+						<img src="img/top-s2.jpg" alt="" class="gallery__events-img">
+						<p class="p0 gallery__events-text">Семинар Ludus BJJ Марьино по Бразильскому Джиу Джитсу</p>
+					</div>
+					<div class="gallery__events-item">
+						<img src="img/top-s3.jpg" alt="" class="gallery__events-img">
+						<p class="p0 gallery__events-text">Batizado & Troca de Corda 2017 Mestre Bola</p>
+					</div>
+					<div class="gallery__events-item">
+						<img src="img/top-s4.jpg" alt="" class="gallery__events-img">
+						<p class="p0 gallery__events-text">Спортивный летний лагерь "Capoeira & BJJ Camp 2016"</p>
+					</div>
+					<button class="gallery__events-arrow2" onclick="plusSlide()"></button>
+				</div>
+			</div>
+		</section>
+
+			<section class="search">
+			<div class="search__bg">
+				<div class="search__flex container">
+					<ul class="search__bg__list p0">
+						<li class="search__bg__item"><a href="" class="search__bg__item-link">О нас</a></li>
+						<li class="search__bg__item"><a href="" class="search__bg__item-link">Лагеря</a></li>
+						<li class="search__bg__item"><a href="" class="search__bg__item-link">Занятия</a></li>
+						<li class="search__bg__item"><a href="" class="search__bg__item-link">Расписание</a></li>
+						<li class="search__bg__item"><a href="" class="search__bg__item-link">Ludus BJJ</a></li>
+						<li class="search__bg__item"><a href="" class="search__bg__item-link long">Фотогалерея</a></li>
+						<li class="search__bg__item"><a href="" class="search__bg__item-link">Контакты</a></li>
+					</ul>
+					<form class="search__form">
+						<input type="search" class="search__bg-search">
+					</form>
+				</div>
+			</div>
+		</section>
+		<section class="bottom-cont container">
+			<p class="p0 bottom-cont__email"><a class="bottom-cont__email-link" href="mailto:ErshovDmitrii@gmail.com">ErshovDmitrii@gmail.com</a></p>
+			<p class="p0 bottom-cont__tel"><a class="bottom-cont__tel-link" href="tel:+79263451294">+7 (926) 345 12 94</a></p>
+			<div class="bottom-cont__networks">
+				<a class="bottom-cont__soc-link" href="https://vk.com/share.php?url=http%3A%2F%2Fcapoeiranaveia.ru%2F&title=Capoeira%20Camara%20Russia&description=&image="  target="_blank"><img src="img/vk-social-logotype.png" alt="" class="bottom-cont__networks-img"></a>
+				<a class="bottom-cont__soc-link" href="https://www.facebook.com/sharer.php?src=sp&u=http%3A%2F%2Fcapoeiranaveia.ru%2F&t=Capoeira%20Camara%20Russia&description=&picture=" target="_blank"><img src="img/facebook-logo.png" alt="" class="bottom-cont__networks-img"></a>
+				<a class="bottom-cont__soc-link" href="http://connect.mail.ru/share?url=http%3A%2F%2Fcapoeiranaveia.ru%2F&title=Capoeira%20Camara%20Russia&description=&imageurl=" target="_blank"><img src="img/mail.ru.png" alt="" class="bottom-cont__networks-img"></a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer container">
+		<p class="p0 footer__copy">© Капоэйра Камара Россия,<br> Capoeira Camara Russia 2001–2019</p>
+	</footer>
+
+
+	<!-- <script src="scripts/"></script> -->
+	<script src="scripts/mob-menu.js"></script>
+
+</body>
+</html>
