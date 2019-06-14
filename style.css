@@ -3083,6 +3083,12 @@ button{
 	.schedule__main{
 		margin-top: 10px;
 	}
+	/* ------- */
+	.schedule__moskow{
+		max-width: 1188px;
+		margin: 0 auto;
+	}
+	/* -------- */
 	.schedule__moskow-maps{
 		display: flex;
 		justify-content: space-between;
@@ -3091,7 +3097,8 @@ button{
 	.schedule__moskow__contacts{
 		margin: 0;
 		max-width: 300px;
-		margin-right: 13%;
+		margin-right: 2%;
+		/* margin-right: 13% */
 	}
 	.schedule__moskow-maps-wrap{
 		padding-left: 14%;
