@@ -2595,6 +2595,11 @@ button{
 	.enc__menu-title {
 		padding-left: 0;
 	}
+	.enc__menu-bg {
+		/* padding: 48px 0 25px; */
+		display: flex;
+		justify-content: center;
+	}
 	.enc__menu-list {
 		display: -webkit-box;
 		display: -webkit-flex;
@@ -2630,9 +2635,11 @@ button{
 	}
 	.enc__menu-bg {
 		padding: 48px 0 25px;
+		display: flex;
+		justify-content: center;
 	}
 	.enc__menu-list {
-		/* justify-content: space-between; */
+		/* justify-content: center; */
 		padding-left: 109px;
     	padding-right: 96px;
 	}
