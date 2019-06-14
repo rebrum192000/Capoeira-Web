@@ -3082,6 +3082,19 @@ button{
 @media (min-width: 1300px) {
 	.schedule__main{
 		margin-top: 10px;
+		position: relative;
+	}
+	.schedule__main::before{
+		position: absolute;
+		content: "";
+		top: 30px;
+		left: 0;
+		width: 55%;
+		height: 331px;
+		background: url("img/concr-bg.jpg");
+		border-radius: 0 16px 16px 0;
+		z-index: -1;
+
 	}
 	/* ------- */
 	.schedule__moskow{
@@ -3097,18 +3110,20 @@ button{
 	.schedule__moskow__contacts{
 		margin: 0;
 		max-width: 300px;
-		margin-right: 2%;
-		/* margin-right: 13% */
+		margin-right: 5%;
+		/* margin-right: 13%; */
 	}
 	.schedule__moskow-maps-wrap{
-		padding-left: 14%;
-		padding-right: 6.5%;
+		background: none;
+		/* padding-left: 14%; */
+		padding-left: 5%;
+		padding-right: 3.5%;
 		justify-content: space-between;
 		/* width: 540px; */
-		border-radius: 16px;
+		/* border-radius: 0 16px 16px 0; */
 	}
 	.schedule__moskow-maps-item:nth-child(1){
-		margin-right: 5%;
+		margin-right: 10%;
 	}
 	.schedule__moskow-maps-item{
 		margin: 0 auto;
