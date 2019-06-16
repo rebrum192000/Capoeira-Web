@@ -4071,6 +4071,7 @@ button{
 		margin-bottom: 5px;
 	}
 	.gallery__events-img{
+		cursor: pointer;
 		max-width: 220px;
 		height: auto;
 		display: block;
@@ -4150,6 +4151,7 @@ button{
 		        align-items: center;
 	}
 	.gallery__events-allimages-smalls-img{
+		cursor: pointer;
 		width: 84px;
 		height: 63px;
 	}
