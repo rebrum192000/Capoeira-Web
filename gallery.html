@@ -49,40 +49,53 @@
 	<main class="gallery__main">
 		
 		<section class="gallery__events">
-			<h2 class="p0 gallery__events-head">ФОТОГАЛЕРЕЯ</h2>
+			<h2 class="p0 gallery__events-head container">ФОТОГАЛЕРЕЯ</h2>
 			<div class="gallery__events-wrap">
-				<div class="gallery__events-wrap-flex">
-					<button class="gallery__events-arrow1 btn-back" onclick="minusSlide1()"></button>
-					<div class="gallery__events-item">
-						<img src="img/top-s1.jpg" alt="" class="gallery__events-img">
-						<p class="p0 gallery__events-text">Семинар Ludus BJJ Марьино No GI (Грэпплинг)</p>
+
+				<div class="gallery__events-wrap-flex container">
+
+					<div class="gallery__events-wrap-nobtn-wrap">
+
+						<div class="gallery__events-item">
+							<img src="img/top-s1.jpg" alt="" class="gallery__events-img">
+							<p class="p0 gallery__events-text">Семинар Ludus BJJ<br> Марьино No GI (Грэпплинг)</p>
+						</div>
+						<div class="gallery__events-item">
+							<img src="img/top-s2.jpg" alt="" class="gallery__events-img">
+							<p class="p0 gallery__events-text">Семинар Ludus BJJ Марьино по Бразильскому Джиу Джитсу</p>
+						</div>
+						<div class="gallery__events-item">
+							<img src="img/top-s3.jpg" alt="" class="gallery__events-img">
+							<p class="p0 gallery__events-text">Batizado & Troca de Corda 2017 Mestre Bola</p>
+						</div>
+						<div class="gallery__events-item">
+							<img src="img/top-s4.jpg" alt="" class="gallery__events-img">
+							<p class="p0 gallery__events-text">Спортивный летний лагерь "Capoeira & BJJ Camp 2016"</p>
+						</div>
 					</div>
-					<div class="gallery__events-item">
-						<img src="img/top-s2.jpg" alt="" class="gallery__events-img">
-						<p class="p0 gallery__events-text">Семинар Ludus BJJ Марьино по Бразильскому Джиу Джитсу</p>
-					</div>
-					<div class="gallery__events-item">
-						<img src="img/top-s3.jpg" alt="" class="gallery__events-img">
-						<p class="p0 gallery__events-text">Batizado & Troca de Corda 2017 Mestre Bola</p>
-					</div>
-					<div class="gallery__events-item">
-						<img src="img/top-s4.jpg" alt="" class="gallery__events-img">
-						<p class="p0 gallery__events-text">Спортивный летний лагерь "Capoeira & BJJ Camp 2016"</p>
-					</div>
-					<button class="gallery__events-arrow2" onclick="plusSlide()"></button>
+
 				</div>
+				
+				<div class="gallery__events-btns container">
+					<button class="gallery__events-arrow1 btn-back5" onclick="minusSlide5()"></button>
+					<button class="gallery__events-arrow2 btn-next5" onclick="plusSlide5()"></button>
+				</div>
+
 				<div class="gallery__events-allimages">
 					<div class="gallery__events-allimages-big">
 						<img src="img/bottom-1.jpg" alt="" class="gallery__events-allimages-big-img">
 					</div>
-					<div class="gallery__events-allimages-smalls"><img src="img/bottom-1.jpg" alt="" class="gallery__events-allimages-smalls-img">
-					<img src="img/bottom-1.jpg" alt="" class="gallery__events-allimages-smalls-img">
-					<img src="img/bottom-1.jpg" alt="" class="gallery__events-allimages-smalls-img">
-					<img src="img/bottom-1.jpg" alt="" class="gallery__events-allimages-smalls-img">
-					<img src="img/bottom-1.jpg" alt="" class="gallery__events-allimages-smalls-img">
-					<img src="img/bottom-1.jpg" alt="" class="gallery__events-allimages-smalls-img">
-					<img src="img/bottom-1.jpg" alt="" class="gallery__events-allimages-smalls-img"></div>
+					<div class="gallery__events-allimages-smalls">
+						<img src="img/bottom-1.jpg" alt="" class="gallery__events-allimages-smalls-img">
+						<img src="img/bottom-1.jpg" alt="" class="gallery__events-allimages-smalls-img">
+						<img src="img/bottom-1.jpg" alt="" class="gallery__events-allimages-smalls-img">
+						<img src="img/bottom-1.jpg" alt="" class="gallery__events-allimages-smalls-img">
+						<img src="img/bottom-1.jpg" alt="" class="gallery__events-allimages-smalls-img">
+						<img src="img/bottom-1.jpg" alt="" class="gallery__events-allimages-smalls-img">
+						<img src="img/bottom-1.jpg" alt="" class="gallery__events-allimages-smalls-img">
+					</div>
 				</div>
+
 			</div>
 		</section>
 
@@ -122,6 +135,7 @@
 
 	<!-- <script src="scripts/"></script> -->
 	<script src="scripts/mob-menu.js"></script>
+	<script src="scripts/gallery.js"></script>
 
 </body>
 </html>
