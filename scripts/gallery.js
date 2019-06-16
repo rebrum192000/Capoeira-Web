@@ -1,4 +1,5 @@
-var width5 = 225; // ширина блока
+if(screen.width > 769){
+  var width5 = 265; // ширина блока
     var countVW5 = 1; // количество видимых блоков
     var count5 = 1; // количество сдвигаемых блоков
 
@@ -40,7 +41,50 @@ var width5 = 225; // ширина блока
       console.log(slIndex5);
       console.log(cnt5);
     }
+}    else{
+    var width5 = 225; // ширина блока
+    var countVW5 = 1; // количество видимых блоков
+    var count5 = 1; // количество сдвигаемых блоков
 
+    var carousel5 = document.querySelector('.gallery__events');
+    var list5 = carousel5.querySelector('.gallery__events-wrap-nobtn-wrap');
+    var listElems5 = carousel5.querySelectorAll('.gallery__events-item');
+    var btnBack5 = carousel5.querySelector('.btn-back5');
+    var btnNext5 = carousel5.querySelector('.btn-next5');
+    var position5 = 0; // текущий сдвиг влево
+
+    var slIndex5 = 1;
+    showSlide5(slIndex5);
+
+    function plusSlide5() {
+        showSlide5(slIndex5 += 1*count5);
+    }
+    function minusSlide5() {
+        showSlide5(slIndex5 -= 1*count5);
+    }
+    function currentSlide5(t5) {
+        showSlide5(slIndex5 = t5);
+    }
+    function showSlide5(t5) {
+      btnBack5.setAttribute("style", "opacity: 1");
+      btnNext5.setAttribute("style", "opacity: 1");
+      if (t5 <= 1) {
+        slIndex5 = 1;
+        btnBack5.setAttribute("style", "opacity: 0.5");
+      }
+      if (t5 >= listElems5.length - countVW5 + 1) {
+        slIndex5 = listElems5.length - countVW5 + 1;
+        btnNext5.setAttribute("style", "opacity: 0.5");
+      }
+
+      var cnt5 = Math.ceil(slIndex5 / 3);
+      position5 = width5 * (slIndex5 - 1);
+      list5.style.marginLeft = - position5 + 'px';
+
+      console.log(slIndex5);
+      console.log(cnt5);
+    }
+}
 
 var s1 = document.querySelector('.s1');
 var s2 = document.querySelector('.s2');
@@ -73,7 +117,7 @@ s1.onclick = function() {
   s6.classList.add("notclicked");
   s7.classList.remove("clicked");
   s7.classList.add("notclicked");
-  b1.style.display = "block";
+  b1.style.display = "flex";
   b2.style.display = "none";
   b3.style.display = "none";
   b4.style.display = "none";
@@ -96,7 +140,7 @@ s2.onclick = function() {
   s6.classList.add("notclicked");
   s7.classList.remove("clicked");
   s7.classList.add("notclicked");
-  b2.style.display = "block";
+  b2.style.display = "flex";
   b1.style.display = "none";
   b3.style.display = "none";
   b4.style.display = "none";
@@ -119,7 +163,7 @@ s3.onclick = function() {
   s6.classList.add("notclicked");
   s7.classList.remove("clicked");
   s7.classList.add("notclicked");
-  b3.style.display = "block";
+  b3.style.display = "flex";
   b1.style.display = "none";
   b2.style.display = "none";
   b4.style.display = "none";
@@ -142,7 +186,7 @@ s4.onclick = function() {
   s6.classList.add("notclicked");
   s7.classList.remove("clicked");
   s7.classList.add("notclicked");
-  b4.style.display = "block";
+  b4.style.display = "flex";
   b1.style.display = "none";
   b2.style.display = "none";
   b3.style.display = "none";
@@ -165,7 +209,7 @@ s5.onclick = function() {
   s6.classList.add("notclicked");
   s7.classList.remove("clicked");
   s7.classList.add("notclicked");
-  b5.style.display = "block";
+  b5.style.display = "flex";
   b1.style.display = "none";
   b2.style.display = "none";
   b3.style.display = "none";
@@ -188,7 +232,7 @@ s6.onclick = function() {
   s5.classList.add("notclicked");
   s7.classList.remove("clicked");
   s7.classList.add("notclicked");
-  b6.style.display = "block";
+  b6.style.display = "flex";
   b1.style.display = "none";
   b2.style.display = "none";
   b3.style.display = "none";
@@ -211,7 +255,7 @@ s7.onclick = function() {
   s5.classList.add("notclicked");
   s6.classList.remove("clicked");
   s6.classList.add("notclicked");
-  b7.style.display = "block";
+  b7.style.display = "flex";
   b1.style.display = "none";
   b2.style.display = "none";
   b3.style.display = "none";
@@ -251,7 +295,7 @@ ss1.onclick = function() {
   ss6.classList.add("notclicked");
   ss7.classList.remove("clicked");
   ss7.classList.add("notclicked");
-  bb1.style.display = "block";
+  bb1.style.display = "flex";
   bb2.style.display = "none";
   bb3.style.display = "none";
   bb4.style.display = "none";
@@ -274,7 +318,7 @@ ss2.onclick = function() {
   ss6.classList.add("notclicked");
   ss7.classList.remove("clicked");
   ss7.classList.add("notclicked");
-  bb2.style.display = "block";
+  bb2.style.display = "flex";
   bb1.style.display = "none";
   bb3.style.display = "none";
   bb4.style.display = "none";
@@ -297,7 +341,7 @@ ss3.onclick = function() {
   ss6.classList.add("notclicked");
   ss7.classList.remove("clicked");
   ss7.classList.add("notclicked");
-  bb3.style.display = "block";
+  bb3.style.display = "flex";
   bb1.style.display = "none";
   bb2.style.display = "none";
   bb4.style.display = "none";
@@ -320,7 +364,7 @@ ss4.onclick = function() {
   ss6.classList.add("notclicked");
   ss7.classList.remove("clicked");
   ss7.classList.add("notclicked");
-  bb4.style.display = "block";
+  bb4.style.display = "flex";
   bb1.style.display = "none";
   bb2.style.display = "none";
   bb3.style.display = "none";
@@ -343,7 +387,7 @@ ss5.onclick = function() {
   ss6.classList.add("notclicked");
   ss7.classList.remove("clicked");
   ss7.classList.add("notclicked");
-  bb5.style.display = "block";
+  bb5.style.display = "flex";
   bb1.style.display = "none";
   bb2.style.display = "none";
   bb3.style.display = "none";
@@ -366,7 +410,7 @@ ss6.onclick = function() {
   ss5.classList.add("notclicked");
   ss7.classList.remove("clicked");
   ss7.classList.add("notclicked");
-  bb6.style.display = "block";
+  bb6.style.display = "flex";
   bb1.style.display = "none";
   bb2.style.display = "none";
   bb3.style.display = "none";
@@ -389,7 +433,7 @@ ss7.onclick = function() {
   ss5.classList.add("notclicked");
   ss6.classList.remove("clicked");
   ss6.classList.add("notclicked");
-  bb7.style.display = "block";
+  bb7.style.display = "flex";
   bb1.style.display = "none";
   bb2.style.display = "none";
   bb3.style.display = "none";
@@ -429,7 +473,7 @@ sss1.onclick = function() {
   sss6.classList.add("notclicked");
   sss7.classList.remove("clicked");
   sss7.classList.add("notclicked");
-  bbb1.style.display = "block";
+  bbb1.style.display = "flex";
   bbb2.style.display = "none";
   bbb3.style.display = "none";
   bbb4.style.display = "none";
@@ -452,7 +496,7 @@ sss2.onclick = function() {
   sss6.classList.add("notclicked");
   sss7.classList.remove("clicked");
   sss7.classList.add("notclicked");
-  bbb2.style.display = "block";
+  bbb2.style.display = "flex";
   bbb1.style.display = "none";
   bbb3.style.display = "none";
   bbb4.style.display = "none";
@@ -475,7 +519,7 @@ sss3.onclick = function() {
   sss6.classList.add("notclicked");
   sss7.classList.remove("clicked");
   sss7.classList.add("notclicked");
-  bbb3.style.display = "block";
+  bbb3.style.display = "flex";
   bbb1.style.display = "none";
   bbb2.style.display = "none";
   bbb4.style.display = "none";
@@ -498,7 +542,7 @@ sss4.onclick = function() {
   sss6.classList.add("notclicked");
   sss7.classList.remove("clicked");
   sss7.classList.add("notclicked");
-  bbb4.style.display = "block";
+  bbb4.style.display = "flex";
   bbb1.style.display = "none";
   bbb2.style.display = "none";
   bbb3.style.display = "none";
@@ -521,7 +565,7 @@ sss5.onclick = function() {
   sss6.classList.add("notclicked");
   sss7.classList.remove("clicked");
   sss7.classList.add("notclicked");
-  bbb5.style.display = "block";
+  bbb5.style.display = "flex";
   bbb1.style.display = "none";
   bbb2.style.display = "none";
   bbb3.style.display = "none";
@@ -544,7 +588,7 @@ sss6.onclick = function() {
   sss5.classList.add("notclicked");
   sss7.classList.remove("clicked");
   sss7.classList.add("notclicked");
-  bbb6.style.display = "block";
+  bbb6.style.display = "flex";
   bbb1.style.display = "none";
   bbb2.style.display = "none";
   bbb3.style.display = "none";
@@ -567,7 +611,7 @@ sss7.onclick = function() {
   sss5.classList.add("notclicked");
   sss6.classList.remove("clicked");
   sss6.classList.add("notclicked");
-  bbb7.style.display = "block";
+  bbb7.style.display = "flex";
   bbb1.style.display = "none";
   bbb2.style.display = "none";
   bbb3.style.display = "none";
@@ -607,7 +651,7 @@ ssss1.onclick = function() {
   ssss6.classList.add("notclicked");
   ssss7.classList.remove("clicked");
   ssss7.classList.add("notclicked");
-  bbbb1.style.display = "block";
+  bbbb1.style.display = "flex";
   bbbb2.style.display = "none";
   bbbb3.style.display = "none";
   bbbb4.style.display = "none";
@@ -630,7 +674,7 @@ ssss2.onclick = function() {
   ssss6.classList.add("notclicked");
   ssss7.classList.remove("clicked");
   ssss7.classList.add("notclicked");
-  bbbb2.style.display = "block";
+  bbbb2.style.display = "flex";
   bbbb1.style.display = "none";
   bbbb3.style.display = "none";
   bbbb4.style.display = "none";
@@ -653,7 +697,7 @@ ssss3.onclick = function() {
   ssss6.classList.add("notclicked");
   ssss7.classList.remove("clicked");
   ssss7.classList.add("notclicked");
-  bbbb3.style.display = "block";
+  bbbb3.style.display = "flex";
   bbbb1.style.display = "none";
   bbbb2.style.display = "none";
   bbbb4.style.display = "none";
@@ -676,7 +720,7 @@ ssss4.onclick = function() {
   ssss6.classList.add("notclicked");
   ssss7.classList.remove("clicked");
   ssss7.classList.add("notclicked");
-  bbbb4.style.display = "block";
+  bbbb4.style.display = "flex";
   bbbb1.style.display = "none";
   bbbb2.style.display = "none";
   bbbb3.style.display = "none";
@@ -699,7 +743,7 @@ ssss5.onclick = function() {
   ssss6.classList.add("notclicked");
   ssss7.classList.remove("clicked");
   ssss7.classList.add("notclicked");
-  bbbb5.style.display = "block";
+  bbbb5.style.display = "flex";
   bbbb1.style.display = "none";
   bbbb2.style.display = "none";
   bbbb3.style.display = "none";
@@ -722,7 +766,7 @@ ssss6.onclick = function() {
   ssss5.classList.add("notclicked");
   ssss7.classList.remove("clicked");
   ssss7.classList.add("notclicked");
-  bbbb6.style.display = "block";
+  bbbb6.style.display = "flex";
   bbbb1.style.display = "none";
   bbbb2.style.display = "none";
   bbbb3.style.display = "none";
@@ -745,7 +789,7 @@ ssss7.onclick = function() {
   ssss5.classList.add("notclicked");
   ssss6.classList.remove("clicked");
   ssss6.classList.add("notclicked");
-  bbbb7.style.display = "block";
+  bbbb7.style.display = "flex";
   bbbb1.style.display = "none";
   bbbb2.style.display = "none";
   bbbb3.style.display = "none";
@@ -785,7 +829,7 @@ sssss1.onclick = function() {
   sssss6.classList.add("notclicked");
   sssss7.classList.remove("clicked");
   sssss7.classList.add("notclicked");
-  bbbbb1.style.display = "block";
+  bbbbb1.style.display = "flex";
   bbbbb2.style.display = "none";
   bbbbb3.style.display = "none";
   bbbbb4.style.display = "none";
@@ -808,7 +852,7 @@ sssss2.onclick = function() {
   sssss6.classList.add("notclicked");
   sssss7.classList.remove("clicked");
   sssss7.classList.add("notclicked");
-  bbbbb2.style.display = "block";
+  bbbbb2.style.display = "flex";
   bbbbb1.style.display = "none";
   bbbbb3.style.display = "none";
   bbbbb4.style.display = "none";
@@ -831,7 +875,7 @@ sssss3.onclick = function() {
   sssss6.classList.add("notclicked");
   sssss7.classList.remove("clicked");
   sssss7.classList.add("notclicked");
-  bbbbb3.style.display = "block";
+  bbbbb3.style.display = "flex";
   bbbbb1.style.display = "none";
   bbbbb2.style.display = "none";
   bbbbb4.style.display = "none";
@@ -854,7 +898,7 @@ sssss4.onclick = function() {
   sssss6.classList.add("notclicked");
   sssss7.classList.remove("clicked");
   sssss7.classList.add("notclicked");
-  bbbbb4.style.display = "block";
+  bbbbb4.style.display = "flex";
   bbbbb1.style.display = "none";
   bbbbb2.style.display = "none";
   bbbbb3.style.display = "none";
@@ -877,7 +921,7 @@ sssss5.onclick = function() {
   sssss6.classList.add("notclicked");
   sssss7.classList.remove("clicked");
   sssss7.classList.add("notclicked");
-  bbbbb5.style.display = "block";
+  bbbbb5.style.display = "flex";
   bbbbb1.style.display = "none";
   bbbbb2.style.display = "none";
   bbbbb3.style.display = "none";
@@ -900,7 +944,7 @@ sssss6.onclick = function() {
   sssss5.classList.add("notclicked");
   sssss7.classList.remove("clicked");
   sssss7.classList.add("notclicked");
-  bbbbb6.style.display = "block";
+  bbbbb6.style.display = "flex";
   bbbbb1.style.display = "none";
   bbbbb2.style.display = "none";
   bbbbb3.style.display = "none";
@@ -923,7 +967,7 @@ sssss7.onclick = function() {
   sssss5.classList.add("notclicked");
   sssss6.classList.remove("clicked");
   sssss6.classList.add("notclicked");
-  bbbbb7.style.display = "block";
+  bbbbb7.style.display = "flex";
   bbbbb1.style.display = "none";
   bbbbb2.style.display = "none";
   bbbbb3.style.display = "none";
@@ -963,7 +1007,7 @@ ssssss1.onclick = function() {
   ssssss6.classList.add("notclicked");
   ssssss7.classList.remove("clicked");
   ssssss7.classList.add("notclicked");
-  bbbbbb1.style.display = "block";
+  bbbbbb1.style.display = "flex";
   bbbbbb2.style.display = "none";
   bbbbbb3.style.display = "none";
   bbbbbb4.style.display = "none";
@@ -986,7 +1030,7 @@ ssssss2.onclick = function() {
   ssssss6.classList.add("notclicked");
   ssssss7.classList.remove("clicked");
   ssssss7.classList.add("notclicked");
-  bbbbbb2.style.display = "block";
+  bbbbbb2.style.display = "flex";
   bbbbbb1.style.display = "none";
   bbbbbb3.style.display = "none";
   bbbbbb4.style.display = "none";
@@ -1009,7 +1053,7 @@ ssssss3.onclick = function() {
   ssssss6.classList.add("notclicked");
   ssssss7.classList.remove("clicked");
   ssssss7.classList.add("notclicked");
-  bbbbbb3.style.display = "block";
+  bbbbbb3.style.display = "flex";
   bbbbbb1.style.display = "none";
   bbbbbb2.style.display = "none";
   bbbbbb4.style.display = "none";
@@ -1032,7 +1076,7 @@ ssssss4.onclick = function() {
   ssssss6.classList.add("notclicked");
   ssssss7.classList.remove("clicked");
   ssssss7.classList.add("notclicked");
-  bbbbbb4.style.display = "block";
+  bbbbbb4.style.display = "flex";
   bbbbbb1.style.display = "none";
   bbbbbb2.style.display = "none";
   bbbbbb3.style.display = "none";
@@ -1055,7 +1099,7 @@ ssssss5.onclick = function() {
   ssssss6.classList.add("notclicked");
   ssssss7.classList.remove("clicked");
   ssssss7.classList.add("notclicked");
-  bbbbbb5.style.display = "block";
+  bbbbbb5.style.display = "flex";
   bbbbbb1.style.display = "none";
   bbbbbb2.style.display = "none";
   bbbbbb3.style.display = "none";
@@ -1078,7 +1122,7 @@ ssssss6.onclick = function() {
   ssssss5.classList.add("notclicked");
   ssssss7.classList.remove("clicked");
   ssssss7.classList.add("notclicked");
-  bbbbbb6.style.display = "block";
+  bbbbbb6.style.display = "flex";
   bbbbbb1.style.display = "none";
   bbbbbb2.style.display = "none";
   bbbbbb3.style.display = "none";
@@ -1101,7 +1145,7 @@ ssssss7.onclick = function() {
   ssssss5.classList.add("notclicked");
   ssssss6.classList.remove("clicked");
   ssssss6.classList.add("notclicked");
-  bbbbbb7.style.display = "block";
+  bbbbbb7.style.display = "flex";
   bbbbbb1.style.display = "none";
   bbbbbb2.style.display = "none";
   bbbbbb3.style.display = "none";
@@ -1126,7 +1170,7 @@ var a5 = document.querySelector('.a5');
 var a6 = document.querySelector('.a6');
 
 i1.onclick = function() {
-  a1.style.display = "block";
+  a1.style.display = "flex";
   a2.style.display = "none";
   a3.style.display = "none";
   a4.style.display = "none";
@@ -1140,7 +1184,7 @@ i1.onclick = function() {
   i6.classList.remove("clicked");
 }
 i2.onclick = function() {
-  a2.style.display = "block";
+  a2.style.display = "flex";
   a1.style.display = "none";
   a3.style.display = "none";
   a4.style.display = "none";
@@ -1154,7 +1198,7 @@ i2.onclick = function() {
   i6.classList.remove("clicked");
 }
 i3.onclick = function() {
-  a3.style.display = "block";
+  a3.style.display = "flex";
   a2.style.display = "none";
   a1.style.display = "none";
   a4.style.display = "none";
@@ -1168,7 +1212,7 @@ i3.onclick = function() {
   i6.classList.remove("clicked");
 }
 i4.onclick = function() {
-  a4.style.display = "block";
+  a4.style.display = "flex";
   a2.style.display = "none";
   a3.style.display = "none";
   a1.style.display = "none";
@@ -1182,7 +1226,7 @@ i4.onclick = function() {
   i6.classList.remove("clicked");
 }
 i5.onclick = function() {
-  a5.style.display = "block";
+  a5.style.display = "flex";
   a2.style.display = "none";
   a3.style.display = "none";
   a4.style.display = "none";
@@ -1196,7 +1240,7 @@ i5.onclick = function() {
   i6.classList.remove("clicked");
 }
 i6.onclick = function() {
-  a6.style.display = "block";
+  a6.style.display = "flex";
   a2.style.display = "none";
   a3.style.display = "none";
   a4.style.display = "none";
