@@ -1484,7 +1484,9 @@ button{
 
 
 @media (min-width: 1300px) {
-
+	.index__actions-wrap{
+		margin-bottom: 40px;
+	}
 	.index__actions{
 		max-width: 1256px;
 		margin: 0 auto;
