@@ -1535,9 +1535,9 @@ button{
 		position: absolute;
 		content: "";
 		top: -96px;
-		left: -215px;
-		width: 593px;
-		height: 593px;
+		left: -315px;
+		width: 692px;
+		height: 692px;
 		background: url("img/circle.png") no-repeat;
 		z-index: -1;
 		background-size: contain;
