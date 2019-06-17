@@ -1890,6 +1890,7 @@ button{
 		padding: 27px 0;
 		padding-left: 45px;
 		width: 480px;
+		z-index: 100;
 	}
 	.index__news-head{
 		font-size: 18px;
