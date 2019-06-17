@@ -765,12 +765,12 @@ button{
 }
 
 @-webkit-keyframes opacitySlide {
-	0% { opacity: 0.8; left: 35%;}
+	0% { opacity: 0.8; left: 25%;}
 	100% { opacity: 1; left: 0;}
 }
 
 @keyframes opacitySlide {
-	0% { opacity: 0.8; left: 35%;}
+	0% { opacity: 0.8; left: 25%;}
 	100% { opacity: 1; left: 0;}
 }
 
