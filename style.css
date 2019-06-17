@@ -1116,8 +1116,23 @@ button{
 	position: relative;	
 	/* background: url("img/Ellipse.png") no-repeat; */
 }
-.index__actions-wrap{
-	background: url("img/Ellipse.png") no-repeat 0% 0%;
+/* .index__actions-wrap{
+	position: relative;
+	background: url("img/circle.png") no-repeat 100% 0%;
+} */
+.index__schedule-wrap{
+	position: relative;
+}
+.index__schedule-wrap::after{
+	position: absolute;
+	content: "";
+	top: -96px;
+	left: -260px;
+	width: 593px;
+	height: 593px;
+	background: url("img/circle.png") no-repeat;
+	z-index: -1;
+	background-size: contain;
 }
 /* .index__schedule::before{
 	position: absolute;
@@ -1514,6 +1529,18 @@ button{
 	}
 	.index__schedule-wrap{
 		position: relative;
+	}
+
+	.index__schedule-wrap::after{
+		position: absolute;
+		content: "";
+		top: -96px;
+		left: -215px;
+		width: 593px;
+		height: 593px;
+		background: url("img/circle.png") no-repeat;
+		z-index: -1;
+		background-size: contain;
 	}
 
 	.index__events-img-s-wrap{
