@@ -333,14 +333,17 @@
 		<p class="p0 footer__copy">© Капоэйра Камара Россия,<br> Capoeira Camara Russia 2001–2019</p>
 	</footer>
 	<script src="scripts/jquery-3.4.1.min.js"></script>
-	<script>
-		$(window).resize(function(){
-		window.setTimeout('location.reload()', 500);
-		});
-	</script>
 	<script src="scripts/mob-menu.js"></script>
 	<script src="scripts/index-main-slider.js"></script>
 	<script src="scripts/spoiler.js"></script>
-
+	<script>
+	var s_win_w = $(window).width();
+	$(window).resize(function(){
+	  win_w = $(window).width();
+	  if (win_w >= s_win_w*1.2 || win_w <= s_win_w*0.8) {
+	    location.reload();
+	  }
+	});
+	</script>
 </body>
 </html>
