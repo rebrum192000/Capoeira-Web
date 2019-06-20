@@ -1089,7 +1089,7 @@ button{
 		top: -95px;
 		left: 650px;
 		background: url('img/dance-png.png') no-repeat;
-		z-index: 1000;
+		z-index: -1;
 	}
 	.index__main-slide:nth-of-type(2)::before{
 		position: absolute;
@@ -1099,7 +1099,7 @@ button{
 		top: -95px;
 		left: 650px;
 		background: url('img/dance-png.png') no-repeat;
-		z-index: 1000;
+		z-index: -1;
 	}
 	.index__main-slide:nth-of-type(3)::before{
 		position: absolute;
@@ -1109,7 +1109,7 @@ button{
 		top: -95px;
 		left: 650px;
 		background: url('img/dance-png.png') no-repeat;
-		z-index: 1000;
+		z-index: -1;
 	}
 	.index__main-slide:nth-of-type(4)::before{
 		position: absolute;
@@ -1119,7 +1119,7 @@ button{
 		top: -95px;
 		left: 650px;
 		background: url('img/dance-png.png') no-repeat;
-		z-index: 1000;
+		z-index: -1;
 	}
 	.index__main-slide:nth-of-type(5)::before{
 		position: absolute;
@@ -1129,7 +1129,7 @@ button{
 		top: -95px;
 		left: 650px;
 		background: url('img/dance-png.png') no-repeat;
-		z-index: 1000;
+		z-index: -1;
 	}
 	.index__main-slide:nth-of-type(2){
 		background: none;
@@ -1559,7 +1559,22 @@ button{
 
 
 @media (min-width: 1300px) {
+
+
+	.index__actions-wrap::before{
+		position: absolute;
+		content: "";
+		bottom: 0;
+	    left: 0;
+	    width: 38%;
+	    height: 116%;
+	    background: url(img/circle.png) no-repeat;
+	    background-position: 100% top;
+	    z-index: -1;
+	    background-size: 140% auto;
+	}
 	.index__actions-wrap{
+		position: relative;
 		margin-bottom: 40px;
 	}
 	.index__actions{
@@ -1592,7 +1607,8 @@ button{
 	}
 
 	.index__schedule-wrap::after{
-		position: absolute;
+		display: none;
+		/*position: absolute;
 		content: "";
 		top: -96px;
 		left: -315px;
@@ -1600,7 +1616,7 @@ button{
 		height: 692px;
 		background: url("img/circle.png") no-repeat;
 		z-index: -1;
-		background-size: contain;
+		background-size: contain;*/
 	}
 
 	.index__events-img-s-wrap{
