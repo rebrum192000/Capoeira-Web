@@ -1355,7 +1355,24 @@ button{
 
 
 @media (min-width: 768px) {
-
+	.index__actions-wrap::before{
+		position: absolute;
+		content: "";
+		bottom: 0;
+	    left: 0;
+	    width: 45%;
+    	height: 105%;
+	    background: url(img/circle.png) no-repeat;
+	    background-position: 100% top;
+	    z-index: -1;
+	    background-size: auto 120%;
+	}
+	.index__actions-wrap{
+		position: relative;
+	}
+	.index__schedule-wrap::after{
+		display: none;
+	}
 	.index__actions{
 		max-width: 720px;
 		margin: 0 auto;
