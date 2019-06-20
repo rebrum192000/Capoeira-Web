@@ -37,9 +37,7 @@ if(screen.width > 1299){
 
       console.log(slIndex5);
     }
-}
-
-else if(screen.width > 767){
+} else if(screen.width > 767){
   
     var width5 = 723.5; // ширина блока
     var countVW5 = 1; // количество видимых блоков

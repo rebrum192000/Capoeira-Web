@@ -756,6 +756,8 @@ button{
 }
 .index__main-slider__wrap{
 	width: 9999px;
+	-webkit-transition: margin-left 750ms;
+	-o-transition: margin-left 750ms;
 	transition: margin-left 750ms;
 }
 .index__main-slide {
@@ -830,7 +832,8 @@ button{
 	width: 325px;
 	height: 335px;
 	background: url("img/dance-mob.png") no-repeat;
-	background-size: contain;
+	-webkit-background-size: contain;
+	        background-size: contain;
 	z-index: -1;
 }
 .index__main-slide:nth-of-type(2)::before{
@@ -841,7 +844,8 @@ button{
 	width: 325px;
 	height: 335px;
 	background: url("img/dance-mob.png") no-repeat;
-	background-size: contain;
+	-webkit-background-size: contain;
+	        background-size: contain;
 	z-index: -1;
 }
 .index__main-slide:nth-of-type(3)::before{
@@ -852,7 +856,8 @@ button{
 	width: 325px;
 	height: 335px;
 	background: url("img/dance-mob.png") no-repeat;
-	background-size: contain;
+	-webkit-background-size: contain;
+	        background-size: contain;
 	z-index: -1;
 }
 .index__main-slide:nth-of-type(4)::before{
@@ -863,7 +868,8 @@ button{
 	width: 325px;
 	height: 335px;
 	background: url("img/dance-mob.png") no-repeat;
-	background-size: contain;
+	-webkit-background-size: contain;
+	        background-size: contain;
 	z-index: -1;
 }
 .index__main-slide:nth-of-type(5)::before{
@@ -874,7 +880,8 @@ button{
 	width: 325px;
 	height: 335px;
 	background: url("img/dance-mob.png") no-repeat;
-	background-size: contain;
+	-webkit-background-size: contain;
+	        background-size: contain;
 	z-index: -1;
 }
 
@@ -929,6 +936,8 @@ button{
 		}
 	.index__main-slider__wrap{
 		width: 9999px;
+		-webkit-transition: margin-left 750ms;
+		-o-transition: margin-left 750ms;
 		transition: margin-left 750ms;
 	}
 	.index__main-slide {
@@ -955,7 +964,8 @@ button{
 	    width: 375px;
 	    height: 385px;
 		background: url("img/dance-mob.png") no-repeat;
-		background-size: contain;
+		-webkit-background-size: contain;
+		        background-size: contain;
 		z-index: -1;
 	}
 	.index__main-slide:nth-of-type(2)::before{
@@ -966,7 +976,8 @@ button{
 	    width: 375px;
 	    height: 385px;
 		background: url("img/dance-mob.png") no-repeat;
-		background-size: contain;
+		-webkit-background-size: contain;
+		        background-size: contain;
 		z-index: -1;
 	}
 	.index__main-slide:nth-of-type(3)::before{
@@ -977,7 +988,8 @@ button{
 	    width: 375px;
 	    height: 385px;
 		background: url("img/dance-mob.png") no-repeat;
-		background-size: contain;
+		-webkit-background-size: contain;
+		        background-size: contain;
 		z-index: -1;
 	}
 	.index__main-slide:nth-of-type(4)::before{
@@ -988,7 +1000,8 @@ button{
 	    width: 375px;
 	    height: 385px;
 		background: url("img/dance-mob.png") no-repeat;
-		background-size: contain;
+		-webkit-background-size: contain;
+		        background-size: contain;
 		z-index: -1;
 	}
 	.index__main-slide:nth-of-type(5)::before{
@@ -999,7 +1012,8 @@ button{
 	    width: 375px;
 	    height: 385px;
 		background: url("img/dance-mob.png") no-repeat;
-		background-size: contain;
+		-webkit-background-size: contain;
+		        background-size: contain;
 		z-index: -1;
 	}
 	/* .index__main-slide:first-of-type{
@@ -1051,7 +1065,8 @@ button{
 		padding-left: 150px;
 		max-width: 1300px;
     	margin: 0 auto;
-    	box-sizing: border-box;
+    	-webkit-box-sizing: border-box;
+    	        box-sizing: border-box;
 	}
 	.index__main-slider-forslider{
 		position: relative;
@@ -1062,6 +1077,8 @@ button{
 	}
 	.index__main-slider__wrap{
 		width: 9999px;
+		-webkit-transition: margin-left 750ms;
+		-o-transition: margin-left 750ms;
 		transition: margin-left 750ms;
 	}
 	.index__main-slide {
@@ -1192,7 +1209,8 @@ button{
 	height: 593px;
 	background: url("img/circle.png") no-repeat;
 	z-index: -1;
-	background-size: contain;
+	-webkit-background-size: contain;
+	        background-size: contain;
 }
 /* .index__schedule::before{
 	position: absolute;
@@ -1365,7 +1383,8 @@ button{
 	    background: url(img/circle.png) no-repeat;
 	    background-position: 100% top;
 	    z-index: -1;
-	    background-size: auto 120%;
+	    -webkit-background-size: auto 120%;
+	            background-size: auto 120%;
 	}
 	.index__actions-wrap{
 		position: relative;
@@ -1453,7 +1472,8 @@ button{
 		background: url('img/calend.png');
 	}
 	.index__events-img-s{
-		filter:grayscale(0.5);
+		-webkit-filter:grayscale(0.5);
+		        filter:grayscale(0.5);
 	}
 	.index__events-img-s:hover{
 		opacity: 1;
@@ -1588,7 +1608,8 @@ button{
 	    background: url(img/circle.png) no-repeat;
 	    background-position: 100% top;
 	    z-index: -1;
-	    background-size: 140% auto;
+	    -webkit-background-size: 140% auto;
+	            background-size: 140% auto;
 	}
 	.index__actions-wrap{
 		position: relative;
