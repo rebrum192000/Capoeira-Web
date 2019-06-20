@@ -748,6 +748,7 @@ button{
 .index__main-slider{
 	margin-top: 110px;
 	position: relative;
+	margin-bottom: 30px;
 }
 .index__main-slider-forslider{
 	width: 375px;
@@ -928,6 +929,7 @@ button{
 	.index__main-slider{
 		margin-top: 110px;
 		position: relative;
+		margin-bottom: 0px;
 	}
 		.index__main-slider-forslider{
 		width: 720px;
@@ -1203,7 +1205,7 @@ button{
 .index__schedule-wrap::after{
 	position: absolute;
 	content: "";
-	top: -96px;
+	top: -131px;
 	left: -260px;
 	width: 593px;
 	height: 593px;
