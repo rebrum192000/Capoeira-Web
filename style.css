@@ -768,12 +768,12 @@ button{
 }
 
 .index__main-slide{
-	-webkit-animation: opacitySlide 0.5s ease-in;
-	        animation: opacitySlide 0.5s ease-in;
+	/* -webkit-animation: opacitySlide 0.5s ease-in;
+	        animation: opacitySlide 0.5s ease-in; */
 	        width: 325px;
 	      /* margin-right: 200px; */
 } 
-
+/* 
 @-webkit-keyframes opacitySlide {
 	0% { left: -100%;}
 	100% { left: 0;}
@@ -783,7 +783,7 @@ button{
 	0% { left: -100%;}
 	100% { left: 0;}
 }
-
+ */
 /* .index__main-slide:first-of-type{
 	background: url('img/dance-png.png') no-repeat 22% 65%;
 	-webkit-background-size: auto 410px;
@@ -965,15 +965,15 @@ button{
 	}
 
 	.index__main-slide{
-		-webkit-animation: opacitySlide 0.5s ease-in;
-		        animation: opacitySlide 0.5s ease-in;
+/* 		-webkit-animation: opacitySlide 0.5s ease-in;
+		        animation: opacitySlide 0.5s ease-in; */
 		        width: 720px;
 		       /*margin-right: 200px; */
 	} 
-	.index__main-slide{
+	/* .index__main-slide{
 		-webkit-animation: opacitySlide 0.5s ease-in;
 		        animation: opacitySlide 0.5s ease-in;
-	}
+	} */
 	.index__main-slide::before{
 		position: absolute;
 		content: '';
@@ -1062,8 +1062,8 @@ button{
 		position: relative;
 	} */
 	.index__main-slide{
-		-webkit-animation: opacitySlide 0.5s ease-in;
-		        animation: opacitySlide 0.5s ease-in;
+/* 		-webkit-animation: opacitySlide 0.5s ease-in;
+		        animation: opacitySlide 0.5s ease-in; */
 		width: 1256px;
 	}
 	/* .index__main-slide:nth-of-type(1){
