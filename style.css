@@ -752,15 +752,15 @@ button{
 }
 .index__main-slider-forslider{
 	width: 375px;
-	overflow: hidden;
+/* 	overflow: hidden; */
 	margin: 0 auto;
 }
-.index__main-slider__wrap{
+/* .index__main-slider__wrap{
 	width: 9999px;
 	-webkit-transition: margin-left 750ms;
 	-o-transition: margin-left 750ms;
 	transition: margin-left 750ms;
-}
+} */
 .index__main-slide {
 	display: inline-block;
 	margin-left: 25px;
@@ -810,83 +810,22 @@ button{
 	        background-size: auto 410px;
 } */
 
-.index__main-slide:nth-of-type(1){
-	position: relative;
-}
-.index__main-slide:nth-of-type(2){
-	position: relative;
-}
-.index__main-slide:nth-of-type(3){
-	position: relative;
-}
-.index__main-slide:nth-of-type(4){
-	position: relative;
-}
-.index__main-slide:nth-of-type(5){
-	position: relative;
-}
-.index__main-slide:nth-of-type(1)::before{
-	position: absolute;
-	content: '';
-	top: 85px;
-	left: 15px;
-	width: 325px;
-	height: 335px;
-	background: url("img/dance-mob.png") no-repeat;
-	-webkit-background-size: contain;
-	        background-size: contain;
-	z-index: -1;
-}
-.index__main-slide:nth-of-type(2)::before{
-	position: absolute;
-	content: '';
-	top: 85px;
-	left: 15px;
-	width: 325px;
-	height: 335px;
-	background: url("img/dance-mob.png") no-repeat;
-	-webkit-background-size: contain;
-	        background-size: contain;
-	z-index: -1;
-}
-.index__main-slide:nth-of-type(3)::before{
-	position: absolute;
-	content: '';
-	top: 85px;
-	left: 15px;
-	width: 325px;
-	height: 335px;
-	background: url("img/dance-mob.png") no-repeat;
-	-webkit-background-size: contain;
-	        background-size: contain;
-	z-index: -1;
-}
-.index__main-slide:nth-of-type(4)::before{
-	position: absolute;
-	content: '';
-	top: 85px;
-	left: 15px;
-	width: 325px;
-	height: 335px;
-	background: url("img/dance-mob.png") no-repeat;
-	-webkit-background-size: contain;
-	        background-size: contain;
-	z-index: -1;
-}
-.index__main-slide:nth-of-type(5)::before{
-	position: absolute;
-	content: '';
-	top: 85px;
-	left: 15px;
-	width: 325px;
-	height: 335px;
-	background: url("img/dance-mob.png") no-repeat;
-	-webkit-background-size: contain;
-	        background-size: contain;
-	z-index: -1;
-}
 
-
+.index__main-slide{
+	position: relative;
+}
+.index__main-slide::before{
+	position: absolute;
+	content: '';
+	top: 85px;
+	left: 15px;
+	width: 325px;
+	height: 335px;
+	background: url("img/dance-mob.png") no-repeat;
+	-webkit-background-size: contain;
+	        background-size: contain;
+	z-index: -1;
+}
 
 .index__main-slider-head{
 	font-size: 32px;
@@ -902,9 +841,10 @@ button{
 .index__main-slider-text{
 	font-size: 14px;
 	line-height: 18px;
-	padding-bottom: 270px;
+	padding-bottom: 255px;
 }
 .index__main-slider-button{
+	display: none;
 	background: #CECECE;
 	width: 14px;
 	height: 14px;
@@ -923,7 +863,83 @@ button{
 	    -ms-transform: translate(-50%, 0);
 	        transform: translate(-50%, 0);
 }
+.slick-dots li
+{
+    position: relative;
 
+    display: inline-block;
+
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 14px;
+    height: 14px;
+    padding: 0px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 0px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 14px;
+    height: 14px;
+
+    content: '';
+    text-align: center;
+	background: #CECECE;
+	opacity: 1;
+    /* opacity: .25;
+    color: black; */
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+   /*  opacity: .75;
+    color: black; */
+    opacity: 1;
+    background: #810606;
+}
+.slick-dots {
+    /* margin-bottom: 30px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 @media (min-width: 768px) {
 	.index__main-slider{
@@ -933,15 +949,15 @@ button{
 	}
 		.index__main-slider-forslider{
 		width: 720px;
-		overflow: hidden;
+/* 		overflow: hidden; */
 		margin: 0 auto;
 		}
-	.index__main-slider__wrap{
+/* 	.index__main-slider__wrap{
 		width: 9999px;
 		-webkit-transition: margin-left 750ms;
 		-o-transition: margin-left 750ms;
 		transition: margin-left 750ms;
-	}
+	} */
 	.index__main-slide {
 		display: inline-block;
 		margin-left: 0px;
@@ -958,7 +974,7 @@ button{
 		-webkit-animation: opacitySlide 0.5s ease-in;
 		        animation: opacitySlide 0.5s ease-in;
 	}
-	.index__main-slide:nth-of-type(1)::before{
+	.index__main-slide::before{
 		position: absolute;
 		content: '';
 		top: -10px;
@@ -970,54 +986,7 @@ button{
 		        background-size: contain;
 		z-index: -1;
 	}
-	.index__main-slide:nth-of-type(2)::before{
-		position: absolute;
-		content: '';
-		top: -10px;
-	    left: 339px;
-	    width: 375px;
-	    height: 385px;
-		background: url("img/dance-mob.png") no-repeat;
-		-webkit-background-size: contain;
-		        background-size: contain;
-		z-index: -1;
-	}
-	.index__main-slide:nth-of-type(3)::before{
-		position: absolute;
-		content: '';
-		top: -10px;
-	    left: 339px;
-	    width: 375px;
-	    height: 385px;
-		background: url("img/dance-mob.png") no-repeat;
-		-webkit-background-size: contain;
-		        background-size: contain;
-		z-index: -1;
-	}
-	.index__main-slide:nth-of-type(4)::before{
-		position: absolute;
-		content: '';
-		top: -10px;
-	    left: 339px;
-	    width: 375px;
-	    height: 385px;
-		background: url("img/dance-mob.png") no-repeat;
-		-webkit-background-size: contain;
-		        background-size: contain;
-		z-index: -1;
-	}
-	.index__main-slide:nth-of-type(5)::before{
-		position: absolute;
-		content: '';
-		top: -10px;
-	    left: 339px;
-	    width: 375px;
-	    height: 385px;
-		background: url("img/dance-mob.png") no-repeat;
-		-webkit-background-size: contain;
-		        background-size: contain;
-		z-index: -1;
-	}
+
 	/* .index__main-slide:first-of-type{
 		background: url('img/dance-png.png') no-repeat 148% 102%;
 		-webkit-background-size: auto 520px;
@@ -1073,16 +1042,16 @@ button{
 	.index__main-slider-forslider{
 		position: relative;
 		width: 1159px;
-		overflow: hidden;
+/* 		overflow: hidden; */
 		margin: 0;
-		padding-top: 90px;
+		/* padding-top: 90px; */
 	}
-	.index__main-slider__wrap{
+/* 	.index__main-slider__wrap{
 		width: 9999px;
 		-webkit-transition: margin-left 750ms;
 		-o-transition: margin-left 750ms;
 		transition: margin-left 750ms;
-	}
+	} */
 	.index__main-slide {
 		display: inline-block;
 		margin-left: 0px;
@@ -1097,10 +1066,10 @@ button{
 		        animation: opacitySlide 0.5s ease-in;
 		width: 1256px;
 	}
-	.index__main-slide:nth-of-type(1){
+	/* .index__main-slide:nth-of-type(1){
 		background: none;
-	}
-	.index__main-slide:nth-of-type(1)::before{
+	} */
+	.index__main-slide::before{
 		position: absolute;
 		content: "";
 		width: 505px;
@@ -1110,47 +1079,7 @@ button{
 		background: url('img/dance-png.png') no-repeat;
 		z-index: -1;
 	}
-	.index__main-slide:nth-of-type(2)::before{
-		position: absolute;
-		content: "";
-		width: 505px;
-		height: 520px;
-		top: -95px;
-		left: 650px;
-		background: url('img/dance-png.png') no-repeat;
-		z-index: -1;
-	}
-	.index__main-slide:nth-of-type(3)::before{
-		position: absolute;
-		content: "";
-		width: 505px;
-		height: 520px;
-		top: -95px;
-		left: 650px;
-		background: url('img/dance-png.png') no-repeat;
-		z-index: -1;
-	}
-	.index__main-slide:nth-of-type(4)::before{
-		position: absolute;
-		content: "";
-		width: 505px;
-		height: 520px;
-		top: -95px;
-		left: 650px;
-		background: url('img/dance-png.png') no-repeat;
-		z-index: -1;
-	}
-	.index__main-slide:nth-of-type(5)::before{
-		position: absolute;
-		content: "";
-		width: 505px;
-		height: 520px;
-		top: -95px;
-		left: 650px;
-		background: url('img/dance-png.png') no-repeat;
-		z-index: -1;
-	}
-	.index__main-slide:nth-of-type(2){
+	/* .index__main-slide:nth-of-type(2){
 		background: none;
 	}
 	.index__main-slide:nth-of-type(3){
@@ -1161,7 +1090,7 @@ button{
 	}
 	.index__main-slide:nth-of-type(5){
 		background: none;
-	}
+	} */
 
 	.index__main-slider-text{
 		font-size: 14px;
@@ -1185,6 +1114,26 @@ button{
 	        -ms-transform: translate(-54%, 0);
 	            transform: translate(-54%, 0);
 	}
+	.slick-initialized .slick-slide {
+	    margin-top: 90px;
+	}
+	.slick-dots {
+	    position: absolute;
+	    left: 0px;
+	    bottom: 200px;
+	    display: block;
+	    width: 100%;
+	    padding: 0;
+	    margin: 0;
+	    list-style: none;
+	    text-align: left;
+	}
+	.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+
 }
 
 
